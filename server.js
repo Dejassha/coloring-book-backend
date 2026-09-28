@@ -7,10 +7,23 @@ const db = require('./db');
 
 const app = express();
 const PORT = process.env.PORT || 5050;
+// Allow single origin or comma-separated list, e.g. "http://localhost:3000,http://coloringbook.example.com"
 const CLIENT_ORIGIN = process.env.CLIENT_ORIGIN || '*';
+const ALLOWED_ORIGINS = CLIENT_ORIGIN.split(',').map((s) => s.trim()).filter(Boolean);
 const IMAGES_DIR = path.resolve(__dirname, process.env.IMAGES_DIR || './images');
 
-app.use(cors({ origin: CLIENT_ORIGIN }));
+app.use(
+  cors({
+    origin: (origin, cb) => {
+      // Allow curl / same-origin / no-Origin requests
+      if (!origin) return cb(null, true);
+      if (ALLOWED_ORIGINS.includes('*') || ALLOWED_ORIGINS.includes(origin)) {
+        return cb(null, true);
+      }
+      return cb(new Error(`CORS blocked for origin ${origin}`));
+    },
+  })
+);
 app.use(express.json({ limit: '2mb' }));
 
 // Serve the coloring-book images folder directly, e.g. /images/star.svg
