@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff"/>
+  <polygon id="house-roof" class="colorable" points="60,190 200,80 340,190"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <rect id="house-wall" class="colorable" x="90" y="190" width="220" height="160"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6"/>
+  <rect id="house-door" class="colorable" x="180" y="260" width="50" height="90"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+  <rect id="house-window-1" class="colorable" x="115" y="220" width="45" height="45"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+  <rect id="house-window-2" class="colorable" x="245" y="220" width="45" height="45"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+  <rect id="house-chimney" class="colorable" x="260" y="100" width="30" height="60"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff"/>
+  <path id="fish-body" class="colorable"
+    d="M80 200 C 80 130, 180 90, 260 130 C 300 150, 300 250, 260 270 C 180 310, 80 270, 80 200 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <polygon id="fish-tail" class="colorable" points="260,140 340,90 320,200 340,310 260,260"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <path id="fish-fin" class="colorable" d="M170 250 C 160 290, 190 300, 210 280 C 195 270, 185 260, 170 250 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5" stroke-linejoin="round"/>
+  <circle id="fish-eye" class="colorable" cx="130" cy="175" r="12" fill="#ffffff" stroke="#2b2b2b" stroke-width="4"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff"/>
+  <polygon id="star-body" class="colorable" points="200,40 240,150 360,150 262,220 298,335 200,265 102,335 138,220 40,150 160,150"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <circle id="star-center" class="colorable" cx="200" cy="200" r="22" fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+</svg>

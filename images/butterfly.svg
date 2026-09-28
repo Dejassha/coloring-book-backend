@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff"/>
+  <path id="wing-top-left" class="colorable"
+    d="M200 160 C 160 60, 40 60, 40 150 C 40 210, 130 220, 200 180 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <path id="wing-top-right" class="colorable"
+    d="M200 160 C 240 60, 360 60, 360 150 C 360 210, 270 220, 200 180 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <path id="wing-bottom-left" class="colorable"
+    d="M200 190 C 170 260, 90 300, 60 260 C 30 220, 90 190, 200 200 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <path id="wing-bottom-right" class="colorable"
+    d="M200 190 C 230 260, 310 300, 340 260 C 370 220, 310 190, 200 200 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <rect id="butterfly-body" class="colorable" x="190" y="130" width="20" height="180" rx="10"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+  <path id="antennae" class="colorable" d="M195 135 C 185 110, 165 100, 155 90 M205 135 C 215 110, 235 100, 245 90"
+    fill="none" stroke="#2b2b2b" stroke-width="4"/>
+</svg>

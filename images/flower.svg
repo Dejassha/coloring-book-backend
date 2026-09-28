@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff"/>
+  <path id="flower-stem" class="colorable" d="M200 250 L200 360" stroke="#2b2b2b" stroke-width="6" fill="none"/>
+  <path id="flower-leaf" class="colorable" d="M200 320 C 150 300, 130 330, 150 360 C 190 350, 210 335, 200 320 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5" stroke-linejoin="round"/>
+  <ellipse id="petal-1" class="colorable" cx="200" cy="150" rx="35" ry="60" fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+  <ellipse id="petal-2" class="colorable" cx="200" cy="150" rx="35" ry="60" fill="#ffffff" stroke="#2b2b2b" stroke-width="5" transform="rotate(72 200 200)"/>
+  <ellipse id="petal-3" class="colorable" cx="200" cy="150" rx="35" ry="60" fill="#ffffff" stroke="#2b2b2b" stroke-width="5" transform="rotate(144 200 200)"/>
+  <ellipse id="petal-4" class="colorable" cx="200" cy="150" rx="35" ry="60" fill="#ffffff" stroke="#2b2b2b" stroke-width="5" transform="rotate(216 200 200)"/>
+  <ellipse id="petal-5" class="colorable" cx="200" cy="150" rx="35" ry="60" fill="#ffffff" stroke="#2b2b2b" stroke-width="5" transform="rotate(288 200 200)"/>
+  <circle id="flower-center" class="colorable" cx="200" cy="200" r="28" fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+</svg>
