@@ -43,6 +43,22 @@ function toTitleCase(name) {
   return name.charAt(0).toUpperCase() + name.slice(1);
 }
 
+// Shorten long uploaded filenames (e.g. hashed JPEG names) into a readable label
+function cleanName(id) {
+  // Turn separators into spaces, collapse whitespace
+  let label = id.replace(/[_-]+/g, ' ').replace(/\s+/g, ' ').trim();
+  // If still very long (hash-like), shorten to first words
+  if (label.length > 28) {
+    label = label.slice(0, 28).trim() + '…';
+  }
+  // Title-case each word
+  label = label
+    .split(' ')
+    .map((w) => (w ? w.charAt(0).toUpperCase() + w.slice(1) : w))
+    .join(' ');
+  return label || toTitleCase(id.slice(0, 20));
+}
+
 // ----- Routes -----
 
 app.get('/api/health', (req, res) => {
@@ -50,19 +66,28 @@ app.get('/api/health', (req, res) => {
 });
 
 // List all coloring pictures available in the images folder
+// SVGs are colorable line-art; raster images (jpg/png/webp) are picture-book pages
 app.get('/api/pictures', (req, res) => {
   fs.readdir(IMAGES_DIR, (err, files) => {
     if (err) return res.status(500).json({ error: 'Could not read images folder' });
 
     const pictures = files
-      .filter((f) => f.toLowerCase().endsWith('.svg'))
+      .filter((f) => /\.(svg|jpe?g|png|webp)$/i.test(f))
       .map((file) => {
-        const id = file.replace(/\.svg$/i, '');
+        const ext = file.split('.').pop().toLowerCase();
+        const id = file.replace(/\.[^.]+$/, '');
+        const type = ext === 'svg' ? 'svg' : 'image';
         return {
           id,
-          name: NICE_NAMES[id] || toTitleCase(id),
-          url: `/images/${file}`,
+          name: NICE_NAMES[id] || cleanName(id),
+          url: `/images/${encodeURIComponent(file)}`,
+          type,
         };
+      })
+      // Keep existing SVG line-art first, then new picture-book images
+      .sort((a, b) => {
+        if (a.type !== b.type) return a.type === 'svg' ? -1 : 1;
+        return a.name.localeCompare(b.name);
       });
 
     res.json(pictures);
