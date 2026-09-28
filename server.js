@@ -37,6 +37,9 @@ const NICE_NAMES = {
   fish: 'Fish',
   house: 'House',
   butterfly: 'Butterfly',
+  rose: 'Rose',
+  cat: 'Cat',
+  tree: 'Tree',
 };
 
 function toTitleCase(name) {

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff"/>
+  <path id="rose-stem" class="colorable" d="M200 250 L200 360" stroke="#2b2b2b" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path id="rose-leaf-left" class="colorable" d="M200 310 C 160 295, 140 320, 155 350 C 185 345, 200 325, 200 310 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5" stroke-linejoin="round"/>
+  <path id="rose-leaf-right" class="colorable" d="M200 310 C 240 295, 260 320, 245 350 C 215 345, 200 325, 200 310 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5" stroke-linejoin="round"/>
+  <path id="rose-bud" class="colorable" d="M140 100 C 130 160, 130 230, 165 270 C 185 292, 215 292, 235 270 C 270 230, 270 160, 260 100 C 230 110, 215 120, 200 120 C 185 120, 170 110, 140 100 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <path id="rose-petal-line-left" d="M165 115 C 175 150, 178 200, 185 250" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
+  <path id="rose-petal-line-right" d="M235 115 C 225 150, 222 200, 215 250" stroke="#2b2b2b" stroke-width="4" fill="none" stroke-linecap="round"/>
+</svg>

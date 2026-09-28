@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff"/>
+  <path id="tree-stem" class="colorable" d="M200 245 L200 140" stroke="#2b2b2b" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <ellipse id="tree-leaf-top" class="colorable" cx="200" cy="105" rx="28" ry="55" fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+  <ellipse id="tree-leaf-left-1" class="colorable" cx="200" cy="150" rx="28" ry="55" fill="#ffffff" stroke="#2b2b2b" stroke-width="5" transform="rotate(-45 200 150)"/>
+  <ellipse id="tree-leaf-right-1" class="colorable" cx="200" cy="150" rx="28" ry="55" fill="#ffffff" stroke="#2b2b2b" stroke-width="5" transform="rotate(45 200 150)"/>
+  <ellipse id="tree-leaf-left-2" class="colorable" cx="200" cy="195" rx="28" ry="55" fill="#ffffff" stroke="#2b2b2b" stroke-width="5" transform="rotate(-60 200 195)"/>
+  <ellipse id="tree-leaf-right-2" class="colorable" cx="200" cy="195" rx="28" ry="55" fill="#ffffff" stroke="#2b2b2b" stroke-width="5" transform="rotate(60 200 195)"/>
+  <rect id="tree-pot-rim" class="colorable" x="135" y="245" width="130" height="22" rx="6" fill="#ffffff" stroke="#2b2b2b" stroke-width="5"/>
+  <polygon id="tree-pot" class="colorable" points="142,267 258,267 243,355 157,355" fill="#ffffff" stroke="#2b2b2b" stroke-width="5" stroke-linejoin="round"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <rect x="0" y="0" width="400" height="400" fill="#ffffff"/>
+  <path id="cat-tail" class="colorable" d="M150 320 C 115 320, 105 292, 122 278 C 134 268, 150 272, 156 284 C 160 293, 156 305, 150 320 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5" stroke-linejoin="round"/>
+  <path id="cat-body" class="colorable" d="M150 320 L150 260 C 150 220, 170 190, 195 175 C 205 150, 220 135, 240 135 C 255 135, 265 148, 263 165 C 262 175, 255 182, 250 185 C 258 210, 260 240, 258 260 L 258 320 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="6" stroke-linejoin="round"/>
+  <path id="cat-ear" class="colorable" d="M222 142 L233 116 L249 137 Z"
+    fill="#ffffff" stroke="#2b2b2b" stroke-width="5" stroke-linejoin="round"/>
+  <circle id="cat-eye" class="colorable" cx="246" cy="160" r="8" fill="#ffffff" stroke="#2b2b2b" stroke-width="4"/>
+  <path id="cat-leg-line" d="M200 260 L200 320" stroke="#2b2b2b" stroke-width="4" stroke-linecap="round"/>
+</svg>
